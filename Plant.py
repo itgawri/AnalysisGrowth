@@ -25,33 +25,3 @@ print(f'The smallest growth happened {joined_smallest_growth_count} times in the
 
 joined_biggest_growth_count = joined_growth.count(joined_biggest_growth)
 print(f'The biggest growth happened {joined_biggest_growth_count} times in these 2 weeks')
-
-# PL--------------------------------------------------------------------------------------------
-
-wzrost = [3, 1, 2, 4, 2, 3, 2]
-wzrost.sort()
-najmniejszy_wzrost = wzrost[0]
-print(f'Najmniejszy wzrost w ciągu tygodnia wynosi: {najmniejszy_wzrost} cm')
-
-najwiekszy_wzrost = wzrost[len(wzrost) - 1]
-print(f'Największy wzrost w ciągu tygodnia wynosi: {najwiekszy_wzrost} cm')
-
-sredni_wzrost = sum(wzrost) / len(wzrost)
-print(f'Średni wzrost w ciągu tygodnia wynosi: {sredni_wzrost} cm')
-
-nowy_wzrost = [2, 0, 3, 2, 4, 5, 5]
-polaczony_wzrost = wzrost + nowy_wzrost
-najmniejszy_polaczony_wzrost = min(polaczony_wzrost)
-print(f'Najmniejszy wzrost w ciągu tych 2 tygodni wynosi: {najmniejszy_polaczony_wzrost} cm')
-
-najwiekszy_polaczony_wzrost = max(polaczony_wzrost)
-print(f'Największy wzrost w ciągu tych 2 tygodni wynosi: {najwiekszy_polaczony_wzrost} cm')
-
-sredni_polaczony_wzrost = sum(polaczony_wzrost) / len(polaczony_wzrost)
-print(f'Średni wzrost w ciągu tych 2 tygodni wynosi: {sredni_polaczony_wzrost} cm')
-
-liczba_najmniejszych_wzrostow = polaczony_wzrost.count(najmniejszy_polaczony_wzrost)
-print(f'Najmniejszy wzrost wystąpił {liczba_najmniejszych_wzrostow} razy w ciągu tych 2 tygodni')
-
-liczba_najwiekszych_wzrostow = polaczony_wzrost.count(najwiekszy_polaczony_wzrost)
-print(f'Największy wzrost wystąpił {liczba_najwiekszych_wzrostow} razy w ciągu tych 2 tygodni')
